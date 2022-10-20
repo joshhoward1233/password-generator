@@ -1,0 +1,83 @@
+@font-face {
+  src: url("fonts/karla/Karla-Regular.ttf");
+  font-family: Karla;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #1c1c1c;
+  margin: 0;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  background: #1f2937;
+  border: 5px solid #10B981;
+  border-radius: 20px;
+}
+
+.container-intro {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.1;
+}
+
+.container-flex {
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-titles {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.green-title  {
+  color: #10B981;
+}
+
+button  {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  background-color:#10B981;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+
+.container-passwords {
+  margin: 40px 0 0 0;
+  padding-top: 20.8px;
+  border-top: 1px solid #2f3e53;
+  width: 60%;
+}
+
+.passwords {
+  width: 100%;
+}
+
+.field-text {
+  margin-top: 3px;
+  background: #273549;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  height: 48px;
+  padding-top: 14.4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #10B981;
+  cursor: pointer;
+}
