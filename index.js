@@ -1,15 +1,18 @@
-const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
+const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
 "/"];
 
 const myPopUpOne = document.getElementById("myPopUpOne")
 const myPopUpTwo = document.getElementById("myPopUpTwo")
 const firstPassword = document.getElementById("field-text-one")
 const secondPassword = document.getElementById("field-text-two")
-const passwordLength = 15
+let passwordLength = 8
+
+const slider = document.getElementById("password-slider")
+let sliderNumber = document.getElementById("sliderNumber")
 
 document.getElementById("generateBtn").addEventListener("click", getPasswords)
 
-// getRandomCharacter() generates a string of 15 random characters
+// getRandomCharacter() generates a string of random characters
 
 function getRandomCharacter()   {
     let randomIndex = Math.floor(Math.random() * characters.length)
@@ -32,6 +35,15 @@ function getPasswords() {
     firstPassword.textContent = generatePasswords()
     secondPassword.textContent = generatePasswords()
 }
+
+// Create an input event listener for slider element
+
+slider.addEventListener("input", function () {
+    // Display the value of the slider
+    sliderNumber.textContent = `${slider.value}`;
+    // Assign to passwordLength new value
+    passwordLength = slider.value;
+  });
 
 // The functions copyOne() and copyTwo() copy the passwords
 
