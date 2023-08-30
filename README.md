@@ -50,7 +50,7 @@
 - CSS Flexbox
 - Vanilla JavaScript
 
-### What I Learnt
+### What I Learned
 
 - Design to code conversion
 - Understood CSS Flexbox better
