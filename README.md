@@ -31,7 +31,7 @@
 
 ### Links
 
-- [Live 🔗](https://fantastic-narwhal-489e23.netlify.app/)
+- [Live 🔗](https://password-generator-joshhoward.netlify.app/)
 
 ## My process
 
