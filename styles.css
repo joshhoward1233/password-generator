@@ -1,8 +1,3 @@
-@font-face {
-  src: url("fonts/karla/Karla-Regular.ttf");
-  font-family: Karla;
-}
-
 * {
   box-sizing: border-box;
 }
